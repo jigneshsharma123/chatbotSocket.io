@@ -175,3 +175,30 @@ body {
     font-size: 14px;
     margin-bottom: 10px;
 }
+
+/* Style the container with overflow */
+.chat-container {
+    max-height: 400px; /* Set a maximum height for the container */
+    overflow-y: scroll; /* Enable vertical scrolling */
+  }
+  
+  /* Style the scrollbar and its track */
+  .chat-container::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  .chat-container::-webkit-scrollbar-thumb {
+    background: #2196F3; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+  }
+  
+  .chat-container::-webkit-scrollbar-track {
+    background: #f9f9f9; /* Color of the scrollbar track */
+    border-radius: 5px; /* Rounded corners for the track */
+  }
+  
+  /* Style the scroll buttons (optional) */
+  .chat-container::-webkit-scrollbar-button {
+    display: none; /* Hide the scroll buttons */
+  }
+  
