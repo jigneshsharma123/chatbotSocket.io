@@ -11,16 +11,24 @@
   <div class="main-container">
     <div class="chat-container" id="chat-container">
       <!-- Chat messages will be inserted here -->
-    
     </div>
     <div class="input-container">
       <textarea id="message" placeholder="Type your message"></textarea>
       <button id="send">Send</button>
     </div>
   </div>
-  <script src="/socket.io/socket.io.js"></script>
   
+  <!-- Chat History Tab and Container -->
+  <div class="chat-history-container" id="chat-history-container">
+    <div class="chat-history-tab" id="chat-history-tab">Chat History</div>
+    <div class="chat-history-messages" id="chat-history-messages">
+      <!-- Chat history messages will be displayed here -->
+    <h2>history</h2>
+    </div>
+  </div>
+  
+  <script src="/socket.io/socket.io.js"></script>
   <script src="main.js"></script>
- <!-- main.js for client  -->
+  <!-- main.js for client -->
 </body>
 </html>

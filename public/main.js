@@ -1,9 +1,17 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const socket = io();
     const chatContainer = document.getElementById('chat-container');
     const messageInput = document.getElementById('message');
     const sendButton = document.getElementById('send');
+    const chatHistoryTab = document.getElementById('chat-history-tab');
+    const chatHistoryContainer = document.getElementById('chat-history-container');
   
+    // Click event listener for the "Chat History" tab
+    chatHistoryTab.addEventListener('click', () => {
+      chatHistoryContainer.classList.toggle('active');
+      // Implement logic to fetch and display chat history here
+    });
     sendButton.addEventListener('click', () => {
       sendMessage();
     });
