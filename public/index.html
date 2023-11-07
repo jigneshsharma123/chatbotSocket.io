@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Chatbot</title>
+  <!-- Include a reference to an external CSS file named "style.css" for styling. -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -10,24 +11,26 @@
     <div class="chat-history-container" id="chat-history-container">
       <div class="chat-history-tab" id="chat-history-tab">Chat History</div>
       <div class="chat-history-messages" id="chat-history-messages">
-        <!-- Chat history messages will be displayed here -->
+        <!-- Chat history messages will be displayed here. -->
       </div>
     </div>
   </div>
   <div class="main-container">
     <div class="chat-container" id="chat-container">
-     
+      <!-- Container for displaying the chat messages. -->
     </div>
     <div class="input-container">
+      <!-- Textarea for entering a message. -->
       <textarea id="message" placeholder="Type your message"></textarea>
+      <!-- Button for sending the message. -->
       <button id="send">Send</button>
     </div>
   </div>
 
-  <!-- Chat History Tab and Container -->
-  
 
+  <!-- Include the Socket.io library for enabling real-time communication with the server. -->
   <script src="/socket.io/socket.io.js"></script>
+  <!-- Include the main JavaScript file for client-side logic. -->
   <script src="main.js"></script>
   <!-- main.js for client -->
 </body>
