@@ -15,7 +15,7 @@ const io = require('socket.io')(http);
 // Import the OpenAI library for language processing.
 const OpenAI = require('openai');
 // Get the OpenAI API key from environment variables.
-const openaiApiKey = process.env.OPENAI_API_KEY;
+const openaiApiKey = process.env.OPENAI_API_KEY; 
 // Import the 'Chat' model for storing chat history.
 const Chat = require('./model/chat.model');
 

@@ -22,8 +22,8 @@ body {
   .chat-container {
     background-color: #f9f9f9;
     overflow-y: scroll;
-
-    width: 80%;
+    height:400px;
+    width: 60%;
     max-width: 600px;
     padding: 20px;
     border: 1px solid #ddd;
