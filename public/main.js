@@ -1,7 +1,7 @@
 // Wait for the HTML document to be fully loaded and then execute the following code.
 document.addEventListener('DOMContentLoaded', () => {
 	// Create a socket.io connection to the server.
-	const socket = io();
+	const socket = io("https://chatbot-socket-io.vercel.app/");
 	// Get references to various HTML elements by their IDs.
 	const chatContainer = document.getElementById('chat-container');
 	const messageInput = document.getElementById('message');
