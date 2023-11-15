@@ -20,7 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (chatHistoryContainer.classList.contains('active')) {
 			// Fetch chat history data from the server when the tab is active.
 			fetch('/getChatHistory')
-				.then((response) => response.json())
+			.then((response) => {
+				console.log(response);  // Log the entire response for inspection
+				return response.json();
+			  })
 				.then((data) => {
 					// Clear the chat container to show the chat history.
 					const chatContainer = document.getElementById('chat-container');
