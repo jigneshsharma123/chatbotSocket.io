@@ -1,7 +1,9 @@
 // Import the Express.js library for creating a web server.
 const express = require('express');
+const cors = require('cors');
 // Create an Express application.
 const app = express();
+
 // Load environment variables from a .env file.
 require('dotenv').config();
 // Connect to the MongoDB database using the configuration in './config/mongoose.js'.
@@ -23,7 +25,7 @@ const Chat = require('./model/chat.model');
 const openai = new OpenAI({
 	key: openaiApiKey
 });
-
+app.use(cors());
 // Serve static files from the 'public' directory.
 app.use(express.static('public'));
 
