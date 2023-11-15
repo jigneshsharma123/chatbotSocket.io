@@ -5,7 +5,7 @@ const connectionOptions = {
     useUnifiedTopology:true,
     ssl : true,
 }
-mongoose.connect(process.env.MONGO_DB_URI).then(()=> {
+mongoose.connect('mongodb+srv://jigneshsharma9868:lvoFFUzfNKVdG46H@cluster0.en7kcdw.mongodb.net/chats?retryWrites=true&w=majority').then(()=> {
     console.log('Connected to the db');
 }).catch((error)=> {
     console.error('error in connecting to mongodb', error);
